@@ -45,6 +45,12 @@ text=strQ2B(text)
 
 text=re.sub("<font[\s\S]*?>","",text)
 text=re.sub("</font>","",text)
+text=re.sub("<html[\s\S]*?>","",text)
+text=re.sub("</html>","",text)
+text=re.sub("<body[\s\S]*?>","",text)
+text=re.sub("</body>","",text)
+text=re.sub("<div[\s\S]*?>","",text)
+text=re.sub("</div>","",text)
 ret=re.search(signal1+r"(.*?)"+signal2,text, re.IGNORECASE)
 while ret!=None:
     key=ret.group(1)

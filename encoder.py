@@ -6,9 +6,9 @@ import random
 signal1="<a herf=\""
 signal2="\">lyp</a>"
 
-environments=["abstract","aligned","myLemm","myTheo","myDef","tabular"]
+environments=["abstract","aligned","myLemm","myTheo","myDef","myCoro","tabular"]
 commands=["\\begin{","\\end{","\\section{","\\end{","\\subsection{","\\subsubsection{","\\par",
-         "\\indent","\\hfill","\\textbf{","\\_","\\caption{","\\item"]
+         "\\indent ","\\hfill","\\textbf{","\\_","\\caption{","\\item "]
 
 def generate_random_str(randomlength=10):
     random_str = signal1
