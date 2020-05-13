@@ -141,6 +141,8 @@ text = text.replace("\\", "")
 while text.find("  ")>0:
     text = text.replace("  ", " ")
 
+text = text.replace("\t", "")
+
 text = text.replace(" .", ".")
 text = text.replace(" ,", ",")
 
