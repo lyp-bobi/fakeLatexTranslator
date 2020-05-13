@@ -138,8 +138,9 @@ text = text.replace("}", "")
 Handle backslash
 """
 text = text.replace("\\", "")
+while text.find("  ")>0:
+    text = text.replace("  ", " ")
 
-text = text.replace("  ", " ")
 text = text.replace(" .", ".")
 text = text.replace(" ,", ",")
 
